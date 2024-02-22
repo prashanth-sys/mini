@@ -12,33 +12,11 @@ class MemoryMatrix extends Component {
           <p className="level">Max Level-00</p>
         </div>
         <div className="game-container">
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
-          <button type="button" className="button">
-            .
-          </button>
+          {Array.map({length: 9}, index => (
+            <button key={index} type="button" className="button">
+              .
+            </button>
+          ))}
         </div>
       </div>
     )

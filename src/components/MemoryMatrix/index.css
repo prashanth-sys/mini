@@ -38,3 +38,6 @@
   background-color: #cbd5e1;
   border-width: 0px;
 }
+.selected {
+  background-color: yellow;
+}
