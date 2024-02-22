@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const Home = () => (
@@ -13,12 +14,14 @@ const Home = () => (
         <h1 className="emoji-name">Emoji Game</h1>
       </div>
       <div className="game-card-container">
-        <h1 className="memory-name">Memory Matrix</h1>
-        <img
-          src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1708572317/memory_1_bvfmai.png"
-          className="memory"
-          alt="emoji"
-        />
+        <Link to="/memory/matrix" className="link">
+          <h1 className="memory-name">Memory Matrix</h1>
+          <img
+            src="https://res.cloudinary.com/dlsuy2qn2/image/upload/v1708572317/memory_1_bvfmai.png"
+            className="memory"
+            alt="emoji"
+          />
+        </Link>
       </div>
       <div className="game-card-container">
         <h1 className="memory-name">ROCK PAPER SCISSOR</h1>

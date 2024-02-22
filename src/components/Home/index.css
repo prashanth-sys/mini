@@ -49,3 +49,6 @@
   font-size: 25px;
   font-weight: 500;
 }
+.link {
+  text-decoration: none;
+}
